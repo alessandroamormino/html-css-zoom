@@ -8,10 +8,12 @@
 
 /* main */
 main .container{
+    position: relative;
     height: 100vh;
 }
 
 main .container .container-video{
+
     height: calc(100% - 80px);
     background-color: black;
 
@@ -23,6 +25,32 @@ main .container .container-video{
     padding: 60px 60px 20px 60px;
     overflow: auto;
 }
+
+main .container .container-buttons {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    z-index: 1;
+
+    color: white;
+}
+
+main .container .container-buttons button{
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    padding: .5em;
+    border: none;
+}
+
+main .container .container-buttons .container-view{
+    color: white;
+}
+
+main .container .container-buttons .fa-solid {
+    color: white;
+    height: 1.2em;
+}
+
 
 main .container .container-settings{
     height: 80px;
