@@ -20,19 +20,61 @@ main .container .container-video{
     flex-flow: row wrap;
     gap: 5px;
 
-    padding: 80px 80px 20px 80px;
+    padding: 60px 60px 20px 60px;
+    overflow: auto;
 }
 
 main .container .container-settings{
     height: 80px;
     width: 100%;
     background-color: #222222;
+
+    /* flex */
+    display: flex;
+    justify-content: space-between;
 }
 
 main .container .container-video .card-user {
+    position: relative;
+
     background-color: lightgreen;
     border: 1px solid black;
     /* test */
     width: calc(100% / 7 - 5px);
+    height: calc(100% / 5 - 5px);
+
+    margin-bottom: .3em;
+}
+
+main .container .container-video .card-user .card-name {
+    display: inline-block;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: .5;
+    color: white;
+
+    padding: .2em;
+}
+
+main .container .container-settings .meeting-controls {
+    width: 100px;
+    background-color: white;
+    /* test */
+}
+
+main .container .container-settings .meeting-settings {
+    width: 500px;
+    background-color: white;
+    /* test */
+}
+
+main .container .container-settings .meeting-end {
+    width: 100px;
+    background-color: white;
+    /* test */
 }
 /* /main */
