@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 
 /* main */
 main .container{
@@ -139,21 +143,31 @@ main .container .container-settings .controls .controls-desc{
     font-size: .9em;
 }
 
+main .container .container-settings .share-screen .controls-img{
+    color: #4AC800;
+}
+
 main .container .container-settings .fa-angle-up {
     font-size: .6em;
 }
 
+main .container .container-settings .meeting-end {
+    background-color: rgba(255, 0, 0, .7);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 
+    height: 45%;
+    padding: 0 1.5em;
+    align-self: center;
+    margin-right: 2em;
 
-main .container .container-settings .meeting-settings {
-    width: 500px;
-    /* test */
+    transition: all .2s ease-in-out;
 }
 
-main .container .container-settings .meeting-end {
-    width: 100px;
-    background-color: white;
-    /* test */
+main .container .container-settings .meeting-end:hover {
+    background-color: #ff0000;
 }
 
 /* /settings */
