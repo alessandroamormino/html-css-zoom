@@ -107,7 +107,17 @@ main .container .container-settings .meeting-controls {
     color: white;
 }
 
-main .container .container-settings .meeting-controls .controls {
+main .container .container-settings .meeting-settings {
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+
+    color: white;
+}
+
+main .container .container-settings .controls {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -115,21 +125,21 @@ main .container .container-settings .meeting-controls .controls {
     padding: 0 .5em;
 }
 
-main .container .container-settings .meeting-controls .controls:hover,
-main .container .container-settings .meeting-controls .fa-solid:hover
+main .container .container-settings .controls:hover,
+main .container .container-settings .fa-solid:hover
 {
     cursor: pointer;
 }
 
-main .container .container-settings .meeting-controls .controls .controls-img{
+main .container .container-settings .controls .controls-img{
     font-size: 1.5em;
 }
 
-main .container .container-settings .meeting-controls .controls .controls-desc{
+main .container .container-settings .controls .controls-desc{
     font-size: .9em;
 }
 
-main .container .container-settings .meeting-controls .fa-angle-up {
+main .container .container-settings .fa-angle-up {
     font-size: .6em;
 }
 
@@ -137,7 +147,6 @@ main .container .container-settings .meeting-controls .fa-angle-up {
 
 main .container .container-settings .meeting-settings {
     width: 500px;
-    background-color: white;
     /* test */
 }
 
