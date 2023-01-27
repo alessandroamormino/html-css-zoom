@@ -113,6 +113,7 @@ main .container .container-settings .meeting-controls {
     gap: .5em;
 
     color: white;
+    margin-left: 2em;
 }
 
 main .container .container-settings .meeting-settings {
