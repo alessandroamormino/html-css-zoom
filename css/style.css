@@ -73,11 +73,10 @@ main .container .container-video .card-user .card-name {
     bottom: 0;
     left: 0;
 
-    background-color: black;
-    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
 
-    padding: .2em;
+    padding: .3em;
 }
 
 main .container .container-video img{
