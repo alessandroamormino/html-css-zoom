@@ -57,10 +57,10 @@ main .container .container-buttons .fa-solid {
 main .container .container-video .card-user {
     position: relative;
 
-    background-color: lightgreen;
-    border: 1px solid black;
-    /* test */
-    width: calc(100% / 7 - 5px);
+    /* width: calc(100% / 7 - 5px); */
+    min-width: 250px;
+    max-width: 350px;
+    flex-grow: 1;
     height: calc(100% / 5 - 5px - .3em);
 
     margin-bottom: .3em;
