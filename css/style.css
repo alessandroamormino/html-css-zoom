@@ -61,7 +61,7 @@ main .container .container-video .card-user {
     border: 1px solid black;
     /* test */
     width: calc(100% / 7 - 5px);
-    height: calc(100% / 5 - 5px);
+    height: calc(100% / 5 - 5px - .3em);
 
     margin-bottom: .3em;
 }
@@ -79,7 +79,7 @@ main .container .container-video .card-user .card-name {
     padding: .3em;
 }
 
-main .container .container-video img{
+main .container .container-video img {
     width: 100%;
     height: 100%;
 }
@@ -87,7 +87,7 @@ main .container .container-video img{
 
 /* settings */
 
-main .container .container-settings{
+main .container .container-settings {
     height: 80px;
     width: 100%;
     background-color: #222222;
@@ -98,10 +98,42 @@ main .container .container-settings{
 }
 
 main .container .container-settings .meeting-controls {
-    width: 100px;
-    background-color: white;
-    /* test */
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+
+    color: white;
 }
+
+main .container .container-settings .meeting-controls .controls {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 0 .5em;
+}
+
+main .container .container-settings .meeting-controls .controls:hover,
+main .container .container-settings .meeting-controls .fa-solid:hover
+{
+    cursor: pointer;
+}
+
+main .container .container-settings .meeting-controls .controls .controls-img{
+    font-size: 1.5em;
+}
+
+main .container .container-settings .meeting-controls .controls .controls-desc{
+    font-size: .9em;
+}
+
+main .container .container-settings .meeting-controls .fa-angle-up {
+    font-size: .6em;
+}
+
+
 
 main .container .container-settings .meeting-settings {
     width: 500px;
