@@ -90,6 +90,7 @@ main .container .container-video .card-user .card-name {
 main .container .container-video img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
